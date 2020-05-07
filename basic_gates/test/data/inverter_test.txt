@@ -1,0 +1,17 @@
+# entity
+inverter
+# architecture
+behav1
+# generic parameter names
+g_BUS_WIDTH
+# generic_parameter values
+8
+# input pins
+i_data(8)
+# output pins
+o_data(8)
+# test cases
+00000000,11111111
+11111111,00000000
+10101010,01010101
+10010100,01101011

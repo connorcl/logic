@@ -1,0 +1,18 @@
+# entity name
+dmux1to8
+# architecture name
+struct
+# generic parameters
+g_BUS_WIDTH
+# generic paramter values
+2
+# inputs
+i_data(2), i_sel(3)
+# outputs
+o_data0(2), o_data1(2), o_data2(2), o_data3(2), o_data4(2), o_data5(2), o_data6(2), o_data7(2)
+# test cases
+01,000,01,00,00,00,00,00,00,00
+10,101,00,00,00,00,00,10,00,00
+00,100,00,00,00,00,00,00,00,00
+01,011,00,00,00,01,00,00,00,00
+11,111,00,00,00,00,00,00,00,11

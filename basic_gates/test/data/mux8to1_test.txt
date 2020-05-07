@@ -1,0 +1,18 @@
+# entity name
+mux8to1
+# architecture name
+struct
+# generic parameters
+g_BUS_WIDTH
+# generic paramter values
+3
+# inputs
+i_data0(3), i_data1(3), i_data2(3), i_data3(3), i_data4(3), i_data5(3), i_data6(3), i_data7(3), i_sel(3)
+# outputs
+o_data(3)
+# test cases
+000,101,011,111,100,110,001,010,000,000
+000,101,011,111,100,110,001,010,010,011
+000,101,011,111,100,110,001,010,100,100
+000,101,011,111,100,110,001,010,001,101
+000,101,011,111,100,110,001,010,111,010

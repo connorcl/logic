@@ -1,0 +1,17 @@
+# entity
+xor2to1
+# architecture
+behav1
+# generic paramters
+g_BUS_WIDTH
+# generic param values
+8
+# input pins
+i_data1(8), i_data2(8)
+# output pins
+o_data(8)
+# test cases
+00000000,10111010,10111010
+11111111,10110010,01001101
+10010101,01101010,11111111
+00101001,10001010,10100011

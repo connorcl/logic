@@ -1,0 +1,17 @@
+# entity name
+mux2to1
+# architecture name
+behav2
+# generic parameters
+g_BUS_WIDTH
+# generic paramter values
+2
+# inputs
+i_data0(2), i_data1(2), i_sel
+# outputs
+o_data(2)
+# test cases
+01,00,0,01
+10,00,0,10
+00,11,0,00
+00,11,1,11
