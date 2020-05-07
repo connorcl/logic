@@ -11,7 +11,7 @@ entity xor2to1 is
 	generic (g_BUS_WIDTH: integer := 8);
 	-- 2 inputs and 1 output
 	port (
-		i_data1, i_data2: in std_logic_vector(g_BUS_WIDTH-1 downto 0);
+		i_data0, i_data1: in std_logic_vector(g_BUS_WIDTH-1 downto 0);
 		o_data: out std_logic_vector(g_BUS_WIDTH-1 downto 0)
 	);
 end xor2to1;
@@ -19,5 +19,5 @@ end xor2to1;
 -- XOR gate architecture
 architecture behav1 of xor2to1 is
 begin
-	o_data <= i_data1 xor i_data2;
+	o_data <= i_data0 xor i_data1;
 end behav1;

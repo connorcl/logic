@@ -9,7 +9,7 @@ g_BUS_WIDTH
 # inputs
 i_data(2), i_sel
 # outputs
-o_data1(2), o_data2(2)
+o_data0(2), o_data1(2)
 # test cases
 00,0,00,00
 01,0,01,00

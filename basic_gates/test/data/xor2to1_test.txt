@@ -7,7 +7,7 @@ g_BUS_WIDTH
 # generic param values
 8
 # input pins
-i_data1(8), i_data2(8)
+i_data0(8), i_data1(8)
 # output pins
 o_data(8)
 # test cases
