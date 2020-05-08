@@ -1,0 +1,16 @@
+# entity
+inc
+# architecture
+struct
+# generic params and values
+g_BUS_WIDTH
+8
+# input pins
+i_data(8)
+# output pins
+o_data(8)
+# test cases
+00000000,00000001
+01010101,01010110
+10101101,10101110
+00011111,00100000

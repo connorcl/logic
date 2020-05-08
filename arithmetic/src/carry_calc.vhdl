@@ -25,12 +25,12 @@ architecture struct of carry_calc is
 begin
 	-- recursively calculate previous carry in
 	G_RECURSIVE_CARRY_CALC: if g_BIT_INDEX > 1 generate
-		E_CARRY_CALC: entity work.carry_calc(struct)
-					  generic map (g_BIT_INDEX-1)
-					  port map (i_c0,
-					  			i_p(g_BIT_INDEX-2 downto 0),
-					  			i_g(g_BIT_INDEX-2 downto 0),
-					  			w_c_prev);
+		E_CC: entity work.carry_calc(struct)
+			  generic map (g_BIT_INDEX-1)
+			  port map (i_c0,
+					  	i_p(g_BIT_INDEX-2 downto 0),
+					  	i_g(g_BIT_INDEX-2 downto 0),
+					  	w_c_prev);
 	end generate;
 	-- base condition for recursive calculation: previous carry-in bit
 	-- is original carry-in bit when calculating carry-in at index 1
