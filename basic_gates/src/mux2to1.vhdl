@@ -7,8 +7,8 @@ use ieee.std_logic_1164.all;
 
 -- mux entity
 entity mux2to1 is
-	-- generic parameter for bus width, defaults to 8-bit
-	generic (g_BUS_WIDTH: integer := 8);
+	-- generic parameter for bus width
+	generic (g_BUS_WIDTH: positive);
 	-- two input buses, a select bit and an output bus
 	port (
 		i_data0, i_data1: in std_logic_vector(g_BUS_WIDTH-1 downto 0);
