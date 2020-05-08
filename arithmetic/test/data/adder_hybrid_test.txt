@@ -1,0 +1,18 @@
+# entity 
+adder_hybrid
+# architecture
+struct
+# generic parameters and values
+g_CLA_BLOCKS, g_CLA_WIDTH
+2, 2
+# input pins
+i_a(4), i_b(4)
+# output pins
+o_s(4)
+# test cases
+0000,0000,0000
+1111,0001,0000
+1111,0000,1111
+1111,0000,1111
+1010,0111,0001
+0010,0100,0110

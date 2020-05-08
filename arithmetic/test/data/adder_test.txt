@@ -1,0 +1,19 @@
+# entity 
+adder
+# architecture
+struct
+# generic parameters
+g_BUS_WIDTH
+# generic param values
+8
+# input pins
+i_a(8), i_b(8)
+# output pins
+o_s(8)
+# test cases
+00000000,00000000,00000000
+00000000,00000001,00000001
+11111111,00000000,11111111
+10101010,11001100,01110110
+00011100,10101011,11000111
+00011111,00001001,00101000

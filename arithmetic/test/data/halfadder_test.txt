@@ -1,0 +1,16 @@
+# entity
+halfadder
+# architecture
+behav1
+# generic params and values
+none
+none
+# input pins
+i_a, i_b
+# output pins
+o_s, o_c
+# test cases
+0,0,0,0
+0,1,1,0
+1,0,1,0
+1,1,0,1
