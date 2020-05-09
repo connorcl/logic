@@ -1,0 +1,24 @@
+{
+    "entity": "reg",
+    "architecture": "behav",
+    "library": "work",
+    "clocked": true,
+    "clock_period": 10,
+    "generic_params" : {
+        "g_BUS_WIDTH": 4
+    },
+    "input_pins": {
+        "i_data": 4,
+        "i_we": null
+    },
+    "clock_pin": "i_clk",
+    "output_pins": {
+        "o_data": 4
+    },
+    "test_cases": [
+        {"i_data": "0001", "i_we": "1", "o_data": "0001", "_wait": -1},
+        {"i_data": "0101", "i_we": "1", "o_data": "0101", "_wait": -1},
+        {"i_data": "1111", "i_we": "0", "o_data": "0101", "_wait": -1},
+        {"i_data": "1100", "i_we": "1", "o_data": "1100", "_wait": -1}
+    ]
+}
