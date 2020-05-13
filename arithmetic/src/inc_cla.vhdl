@@ -23,3 +23,4 @@ begin
 		   generic map (g_BUS_WIDTH)
 		   port map (i_data, '1', o_data);
 end struct;
+

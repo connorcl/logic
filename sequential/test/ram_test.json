@@ -1,0 +1,27 @@
+{
+    "entity": "ram",
+    "architecture": "behav",
+    "library": "work",
+    "clocked": true,
+    "clock_period": 10,
+    "generic_params" : {
+        "g_ADDR_WIDTH": 6,
+        "g_SIZE": 48,
+        "g_DATA_WIDTH": 4
+    },
+    "input_pins": {
+        "i_data": 4,
+        "i_addr": 6,
+        "i_we": null
+    },
+    "clock_pin": "i_clk",
+    "output_pins": {
+        "o_data": 4
+    },
+    "test_cases": [
+        {"i_data": "0000", "i_addr": "000000", "i_we": "1", "o_data": "0000", "_wait": -1},
+        {"i_data": "0101", "i_addr": "000101", "i_we": "1", "o_data": "0101", "_wait": -1},
+        {"i_data": "1101", "i_addr": "000101", "i_we": "0", "o_data": "0101", "_wait": -1},
+        {"i_data": "1101", "i_addr": "111111", "i_we": "1", "o_data": "0101", "_wait": -1}
+    ]
+}

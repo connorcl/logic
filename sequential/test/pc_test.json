@@ -1,0 +1,27 @@
+{
+    "entity": "pc",
+    "architecture": "struct",
+    "library": "work",
+    "clocked": true,
+    "clock_period": 10,
+    "generic_params" : {
+        "g_BUS_WIDTH": 4
+    },
+    "input_pins": {
+        "i_data": 4,
+        "i_inc": null,
+        "i_load": null,
+        "i_rst": null
+    },
+    "clock_pin": "i_clk",
+    "output_pins": {
+        "o_data": 4
+    },
+    "test_cases": [
+        {"i_data": "0000", "i_inc": "0", "i_load": "0", "i_rst": "1", "o_data": "0000", "_wait": -1},
+        {"i_data": "1011", "i_inc": "1", "i_load": "0", "i_rst": "0", "o_data": "0001", "_wait": -1},
+        {"i_data": "1100", "i_inc": "1", "i_load": "0", "i_rst": "0", "o_data": "0010", "_wait": -1},
+        {"i_data": "1011", "i_inc": "1", "i_load": "1", "i_rst": "0", "o_data": "1011", "_wait": -1},
+        {"i_data": "1011", "i_inc": "1", "i_load": "0", "i_rst": "1", "o_data": "0000", "_wait": -1}
+    ]
+}

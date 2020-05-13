@@ -33,3 +33,4 @@ begin
 	o_data <= (i_data0 and not sel_expanded) or 
 			  (i_data1 and sel_expanded);
 end behav2;
+
